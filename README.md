@@ -1,7 +1,7 @@
 # systemd-certbot-autorenew
 A systemd script for automatic renewal of certbot TLS certificates
 
-**Note: this script ONLY RENEWS certificates. You need to manually initialize byb obtaining your certificate through command line.**
+**Note: this script ONLY RENEWS certificates. You need to manually initialize by obtaining your certificate through command line.**
 
 ### Usage
 
@@ -18,3 +18,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable certbot.timer
 sudo systemctl start certbot.timer
 ```
+
+### Further Reading
+
+[https://certbot.eff.org/docs/using.html](https://certbot.eff.org/docs/using.html)
