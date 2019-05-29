@@ -1,4 +1,4 @@
-# /lib/systemd/system/certbot.timer
+# /etc/systemd/system/certbot.timer
 
 [Unit]
 Description=Renew Let's Encrypt certificates using certbot twice daily
