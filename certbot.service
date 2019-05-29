@@ -1,0 +1,12 @@
+# /lib/systemd/system/certbot.service
+
+[Unit]
+Description=Certbot renewal service
+After=network.target
+Documentation=https://certbot.eff.org/docs/
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/certbot renew --agree-tos --non-interactive
+ExecStart=systemctl reload nginx.service
+PrivateTmp=true
